@@ -6,5 +6,6 @@ import (
 )
 
 func init() {
-	beego.Router("/videos", &controllers.VideosController{}, "Get:Video")
+	beego.Router("api/videos", &controllers.VideosController{}, "Get:Video")
+	beego.Router("api/advices/create", &controllers.AdvicesController{}, "Post:Advice")
 }
