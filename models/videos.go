@@ -9,6 +9,7 @@ type Videos struct {
 	Id        int64
 	Title     string `orm:"size(128)"`
 	Video     string `orm:"size(128)"`
+	Img       string
 	CreatedAt string
 	UpdatedAt string
 }
