@@ -14,4 +14,5 @@ func init() {
 	beego.Router("api/hongcun", &controllers.MapsController{}, "Get:Cun")
 	beego.Router("api/fengcai", &controllers.MiensController{}, "Get:Fengcai")
 	beego.Router("api/gongzuoshi", &controllers.WorkersController{}, "Get:Gongzuoshi")
+	beego.Router("api/branches", &controllers.BranchesController{}, "Get:Branches")
 }
