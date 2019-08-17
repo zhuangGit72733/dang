@@ -14,7 +14,7 @@ type MapsController struct {
 func (c *MapsController) San() {
 	maps, mapers, err := models.GetSan()
 	if err != nil {
-		logs.Debug("videos controller err:%v", err)
+		logs.Debug("mapers controller err:%v", err)
 	}
 	for k, v := range maps {
 		var Arr []orm.Params
@@ -31,7 +31,7 @@ func (c *MapsController) San() {
 func (c *MapsController) Cun() {
 	maps, mapers, err := models.GetCun()
 	if err != nil {
-		logs.Debug("videos controller err:%v", err)
+		logs.Debug("mapers controller err:%v", err)
 	}
 	for k, v := range maps {
 		var Arr []orm.Params

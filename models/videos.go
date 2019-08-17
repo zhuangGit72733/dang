@@ -6,12 +6,10 @@ import (
 )
 
 type Videos struct {
-	Id        int64
-	Title     string `orm:"size(128)"`
-	Video     string `orm:"size(128)"`
-	Img       string
-	CreatedAt string
-	UpdatedAt string
+	Id    int64
+	Title string `orm:"size(128)"`
+	Video string `orm:"size(128)"`
+	Img   string
 }
 
 func init() {
@@ -20,7 +18,7 @@ func init() {
 
 func GetVideos() (maps []orm.Params, err error) {
 	o := orm.NewOrm()
-	query := fmt.Sprintf("select * from videos")
+	query := fmt.Sprintf("select id,title,video,img from videos")
 	num, err := o.Raw(query).Values(&maps)
 	if err != nil || num < 1 {
 		return nil, err
