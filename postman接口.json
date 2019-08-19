@@ -1,0 +1,451 @@
+{
+	"info": {
+		"_postman_id": "7754ada9-c4b8-4422-83d8-dbae29313c54",
+		"name": "塘桥go",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "注册人数",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:7077/api/members",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"members"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "注册信息",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "13213244252",
+							"type": "text"
+						},
+						{
+							"key": "unit",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "leader",
+							"value": "32",
+							"type": "text"
+						},
+						{
+							"key": "sum\n",
+							"value": "232",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:7077/api/members/create",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"members",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "党建文章",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://139.159.214.233:7077/api/dangjian",
+					"protocol": "http",
+					"host": [
+						"139",
+						"159",
+						"214",
+						"233"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"dangjian"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "风采集萃",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:7077/api/fengcai",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"fengcai"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "红堡地图",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:7077/api/hongbao",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"hongbao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "主题党日",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:7077/api/branches",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"branches"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "课件点播",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:7077/api/videos",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"videos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "活动预告",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:7077/api/huodong",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"huodong"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "指尖矩阵",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:7077/api/zhijian",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"zhijian"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "三张清单",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:7077/api/san",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"san"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "工作室",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "img",
+							"type": "file",
+							"src": "/C:/Users/A/Desktop/塘桥/数据/6工作室/1书记工作室/胡同社区-同心书记工作室/书记接待.jpg"
+						},
+						{
+							"key": "mien_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "coent",
+							"value": "11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:7077/api/gongzuoshi",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"gongzuoshi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "红堡村居",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:7077/api/hongcun",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"hongcun"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "建言献策",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "unit",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:7077/api/advices/create",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"advices",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "文明实践",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:7077/api/wenming",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"wenming"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "誓词教育",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:7077/api/shici",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7077",
+					"path": [
+						"api",
+						"shici"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

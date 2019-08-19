@@ -1,21 +1,22 @@
 package main
 
 import (
-	"dang/config"
 	_ "dang/routers"
-	"fmt"
 	"github.com/astaxie/beego"
-	"github.com/astaxie/beego/logs"
 	"github.com/astaxie/beego/orm"
+	"github.com/astaxie/beego/plugins/cors"
 	_ "github.com/go-sql-driver/mysql"
 )
 
 func main() {
+	//注册数据库到ORM
 	orm.RegisterDataBase("default", "mysql", "root:root@tcp(127.0.0.1:3306)/tangqiao?charset=utf8mb4")
-	addr, err := config.InitConfig()
-	if err != nil {
-		logs.Debug("Init config addr fail,err:%v", err)
-	}
-	fmt.Println(addr)
+	//跨域解决
+	beego.InsertFilter("*", beego.BeforeRouter, cors.Allow(&cors.Options{
+		AllowAllOrigins:  true,
+		AllowMethods:     []string{"PUT", "PATCH", "GET", "POST"},
+		AllowHeaders:     []string{"Origin"},
+		ExposeHeaders:    []string{"Content-Length"},
+		AllowCredentials: true}))
 	beego.Run()
 }

@@ -33,6 +33,7 @@ func getArticles(type_id string) (Arr []orm.Params) {
 	return
 }
 func ImageArrPath(inter interface{}) (arr []string) {
+	//将img的数据转换为数组
 	var str string
 	url, _ := config.InitConfig()
 	str = inter.(string)
